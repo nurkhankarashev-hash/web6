@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="card">
+            <h1 id="greeting">Welcome to My Portfolio</h1>
+            <h2 class="headline">Nurkhan Karashev</h2>
+            <p>I am a software engineering student. I enjoy learning programming and making websites.</p>
+            <button id="lightBtn">Light Theme</button>
+            <button id="darkBtn">Dark Theme</button>
+        </header>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>I study software engineering and practice Java, JavaScript, and web development.</p>
+            <p id="status">Currently learning jQuery!</p>
+            <ul>
+                <li>I enjoy solving coding problems.</li>
+                <li>I like building simple websites.</li>
+                <li>My goal is to become a good developer.</li>
+            </ul>
+            <button id="hideBtn">Hide</button>
+            <button id="showBtn">Show</button>
+            <button id="toggleBtn">Toggle</button>
+        </section>
+
+        <section class="card">
+            <h2>My Gallery</h2>
+            <div id="gallery">
+                <img src="images/coding.svg" alt="Coding illustration">
+                <img src="images/web.svg" alt="Web development illustration">
+            </div>
+            <button id="fadeInBtn">Fade In</button>
+            <button id="fadeOutBtn">Fade Out</button>
+            <button id="fadeToggleBtn">Fade Toggle</button>
+        </section>
+
+        <section class="card">
+            <h2>My Favorites</h2>
+            <h3 class="panelTitle" data-panel="music">My Favorite Music</h3>
+            <p id="music" class="panel">I like listening to relaxing music while studying.</p>
+            <h3 class="panelTitle" data-panel="movie">My Favorite Movie</h3>
+            <p id="movie" class="panel">I enjoy science fiction movies.</p>
+            <h3 class="panelTitle" data-panel="subject">My Favorite Subject</h3>
+            <p id="subject" class="panel">My favorite subject is programming.</p>
+            <button id="slideUpBtn">Slide Up All</button>
+            <button id="slideDownBtn">Slide Down All</button>
+        </section>
+
+        <section class="card">
+            <h2>My Technical Skills</h2>
+            <ul id="skillList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+            <input id="newSkill" type="text" placeholder="Enter a skill">
+            <button id="addBtn">Add Skill</button>
+            <button id="prependBtn">Prepend Skill</button>
+            <button id="removeBtn">Remove Skill</button>
+        </section>
+
+        <section class="card">
+            <h2>My GitHub</h2>
+            <a id="socialLink" href="https://github.com" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+            <button id="changeLinkBtn">Change Link to jQuery</button>
+        </section>
+
+        <section class="card">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <input id="nameInput" type="text" placeholder="Your name">
+                <input id="emailInput" type="email" placeholder="Your email">
+            </form>
+            <p>Name: <span id="liveName"></span></p>
+            <p>Email: <span id="liveEmail"></span></p>
+        </section>
+
+        <section class="card">
+            <h2>My Skill Levels</h2>
+            <p>HTML</p>
+            <div class="barTrack"><div class="bar" data-width="85%"></div></div>
+            <p>CSS</p>
+            <div class="barTrack"><div class="bar" data-width="70%"></div></div>
+            <p>JavaScript</p>
+            <div class="barTrack"><div class="bar" data-width="60%"></div></div>
+            <button id="animateBtn">Animate My Skills</button>
+        </section>
+    </main>
+</body>
+</html>

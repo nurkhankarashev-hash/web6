@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f4f8;
+    color: #243247;
+}
+
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+#gallery {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+#gallery img {
+    width: calc(50% - 6px);
+    border-radius: 8px;
+}
+
+.panelTitle {
+    background: #e8eefb;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.panel {
+    padding: 5px 12px;
+}
+
+#skillList li {
+    margin-bottom: 6px;
+}
+
+.barTrack {
+    height: 20px;
+    width: 100%;
+    background: #dce5f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    width: 0;
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 10px;
+}
+
+.dark {
+    background: #172033;
+    color: #eef2ff;
+}
+
+.dark .card {
+    background: #26334a;
+}
+
+.dark .panelTitle {
+    background: #354766;
+}
+
+.dark a {
+    color: #9fc2ff;
+}
+
+@media (max-width: 500px) {
+    #gallery {
+        flex-direction: column;
+    }
+
+    #gallery img {
+        width: 100%;
+    }
+}
